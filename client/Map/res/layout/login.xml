@@ -1,0 +1,184 @@
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/password"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="58dp"
+        android:ems="10"
+        android:hint="Enter Username" >
+
+       
+    </EditText>
+
+    <Button
+        android:id="@+id/login1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/password"
+        android:layout_below="@+id/password"
+        android:layout_marginTop="25dp"
+        android:onClick="startlogin"
+        android:text="Login" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword" >
+
+       
+    </EditText>
+
+</RelativeLayout> -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/login_bg"
+  >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="25" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="35"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="10" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:background="@drawable/form_bg"
+                android:orientation="vertical"
+                android:padding="5dip"
+                android:weightSum="100" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="70"
+                    android:weightSum="100"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:paddingTop="5dip"
+                    android:paddingBottom="5dip"
+                    android:orientation="vertical" >
+ 					<LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="45"
+                    android:gravity="bottom"
+                     >
+                     <EditText
+                        android:id="@+id/username"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input_bg"
+                        android:hint="Username"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:drawableLeft="@drawable/user_icon"
+                        android:drawablePadding="2dip"
+                        android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="10"
+                     >
+                     
+                    </LinearLayout>
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="45"
+                    android:gravity="top"
+                     >
+                      <EditText
+                        android:id="@+id/password"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input_bg"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:drawableLeft="@drawable/key"
+                        android:drawablePadding="2dip"
+                        android:singleLine="true" />
+                    </LinearLayout>
+                    
+
+                  <!--   <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="5dip" /> -->
+
+                   
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_weight="30"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/login1"
+                        android:layout_width="wrap_content"
+                       
+                         android:background="@drawable/login_selctr"
+                        
+                         android:layout_height="40dp"
+                         android:layout_marginRight="50dp"
+                         android:layout_marginLeft="50dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="10" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="40" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

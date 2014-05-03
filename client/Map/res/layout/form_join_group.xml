@@ -1,0 +1,67 @@
+<!-- <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@drawable/login_bg"
+    >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="123dp"
+        android:background="#ff1414"
+        android:onClick="joinexisting"
+        android:text="Join Existing Group" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+         android:background="#ff1414"
+        android:onClick="newgroup"
+        android:text="Form a new group" />
+
+</RelativeLayout>
+ -->
+ 
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     android:background="@drawable/login_bg"
+     android:paddingTop="130dp"
+    >
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="56dp"
+        android:background="@drawable/join_existing"
+        android:onClick="joinexisting"
+         />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/button1"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/new_grp"
+        android:onClick="newgroup" />
+
+</RelativeLayout>

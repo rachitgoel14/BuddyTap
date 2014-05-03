@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainParent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/refershButton"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/refresh"
+            android:focusable="true" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="392dp" >
+
+        <LinearLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+            
+        	    
+           
+
+            <com.google.android.maps.MapView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mapView"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:apiKey="058wzqyIjQPEKpNe80tJpC2XSRiUez_ZHRdvHIA"
+                android:clickable="true" />
+
+            <EditText
+                android:id="@+id/fseId"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter FSE ID :"
+                android:textSize="20sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/outletName"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Outlet Name :"
+                android:textSize="20sp" >
+            </EditText>
+
+            <Button
+                android:id="@+id/submitLocation"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="40dp"
+                
+                android:text="Tag My Location"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

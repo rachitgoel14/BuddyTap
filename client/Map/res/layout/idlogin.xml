@@ -1,0 +1,297 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/login_bg"
+  >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="25" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="35"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="10" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="80"
+                android:background="@drawable/form_bg"
+                android:orientation="vertical"
+                android:padding="5dip"
+                android:weightSum="100" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="70"
+                    android:weightSum="100"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:paddingTop="5dip"
+                    android:paddingBottom="5dip"
+                    android:orientation="vertical" >
+ 					<LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="45"
+                    android:gravity="bottom"
+                     >
+                     <EditText
+                        android:id="@+id/grpname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input_bg"
+                        android:hint="Group Name"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:drawableLeft="@drawable/user_icon"
+                        android:drawablePadding="2dip"
+                        android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="10"
+                     >
+                     
+                    </LinearLayout>
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="45"
+                    android:gravity="top"
+                     >
+
+                      <EditText
+                          android:id="@+id/grpid"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:background="@drawable/input_bg"
+                          android:drawableLeft="@drawable/key"
+                          android:drawablePadding="2dip"
+                          android:hint="Group Id"
+                          android:inputType="textPassword"
+                          android:paddingLeft="5dip"
+                          android:paddingRight="5dip"
+                          android:singleLine="true" />
+
+                    </LinearLayout>
+                    
+
+                  <!--   <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="5dip" /> -->
+
+                   
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_weight="30"
+                    android:gravity="center" >
+
+                   <Button
+                        android:id="@+id/login"
+                         android:layout_width="wrap_content"
+                       
+                         android:background="@drawable/join_bttn"
+                        
+                         android:layout_height="40dp"
+                         android:layout_marginRight="50dp"
+                         android:layout_marginLeft="50dp"
+                       android:onClick="LoginActivity"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="10" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="40" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+
+<!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <EditText
+        android:id="@+id/grpid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="46dp"
+        android:ems="10"
+        android:hint="Enter GroupID" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/grpid"
+        android:layout_alignRight="@+id/grpid"
+        android:layout_below="@+id/grpid"
+        android:layout_marginTop="36dp"
+        android:onClick="LoginActivity"
+        android:text="Login" />
+
+</RelativeLayout> -->
+
+<!-- <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent"
+    android:orientation="horizontal" 
+    android:background="@drawable/login_bg"
+  >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:weightSum="100" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="25" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="35"
+            android:orientation="horizontal"
+            android:weightSum="100" >
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="10" >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="80"
+                android:background="@drawable/form_bg"
+                android:orientation="vertical"
+                android:padding="5dip"
+                android:weightSum="100" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="70"
+                    android:weightSum="100"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:paddingTop="5dip"
+                    android:paddingBottom="5dip"
+                    android:orientation="vertical" >
+ 					<LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="45"
+                    android:gravity="bottom"
+                     >
+                     <EditText
+                        android:id="@+id/grpid"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input_bg"
+                        android:hint="Enter Groupid"
+                        android:paddingLeft="5dip"
+                        android:paddingRight="5dip"
+                        android:drawableLeft="@drawable/user_icon"
+                        android:drawablePadding="2dip"
+                        android:singleLine="true" />
+                    </LinearLayout>
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="10"
+                     >
+                     
+                    </LinearLayout>
+                    <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="45"
+                    android:gravity="top"
+                     >
+                      
+                    </LinearLayout>
+                    
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="5dip" />
+
+                   
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dip"
+                    android:layout_marginTop="5dip"
+                    android:layout_weight="30"
+                    android:gravity="center" >
+
+                    <Button
+                        android:id="@+id/login"
+                        android:layout_width="157dp"
+                        android:layout_height="55dp"
+                        android:onClick="LoginActivity"
+                        android:background="@drawable/login_button" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="10" >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0dip"
+            android:layout_weight="40" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout> -->

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+ <item
+        android:id="@+id/action_refresh2"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_action_refresh"
+       />
+ 
+ <item
+        android:id="@+id/list_friends"
+       android:icon="@drawable/list"
+       
+        android:showAsAction="always"
+    />
+ <item
+        android:id="@+id/add_friend"
+       android:icon="@drawable/addperson"
+       
+        android:showAsAction="always"
+    />
+ <!-- <item
+        android:id="@+id/form_group"
+        android:title="Form new group"
+      
+        android:showAsAction="ifRoom|withText"
+    />
+ 
+ <item
+        android:id="@+id/leave_group"
+        android:title="Delete this group"
+      
+        android:showAsAction="ifRoom|withText"
+    /> -->
+</menu>

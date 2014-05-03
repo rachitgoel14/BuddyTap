@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     >
+    
+   <fragment
+          android:id="@+id/map"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:name="com.google.android.gms.maps.SupportMapFragment"/>
+    
+    <LinearLayout
+        android:id="@+id/bottom_layover"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="#FF2828"
+       android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+             android:background="#A52A2A"
+            
+            android:id="@+id/post_comment"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:onClick="TagMe"
+            android:text="Tag My Location" />
+
+    </LinearLayout>
+
+</RelativeLayout>
